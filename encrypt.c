@@ -32,7 +32,7 @@ void help_message(void) {
 // Main function that contains the implementation to encrypt a file
 int main(int argc, char **argv) {
     int opt = 0;
-    FILE *infile = stdin; // as specified in asgn6.pdf
+    FILE *infile = stdin;
     FILE *outfile = stdout;
     FILE *pbfile;
     char *pbfile_path = "rsa.pub";
