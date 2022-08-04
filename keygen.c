@@ -38,7 +38,7 @@ void help_message(void) {
 int main(int argc, char **argv) {
     int opt = 0;
     int nbits = 256; // default nbits
-    int iters = 50; // specified by asgn6.pdf
+    int iters = 50;
     char *public_path = "rsa.pub";
     char *private_path = "rsa.priv";
     uint64_t SEED = time(NULL); // specified by asgn6.pdf
@@ -75,7 +75,7 @@ int main(int argc, char **argv) {
 
     mpz_t p, q, n, e, d, m, s;
     mpz_inits(p, q, n, e, d, m, s, NULL);
-    fchmod(fileno(pvfile), 0600); // Setting permissions as specified by asgn6.pdf
+    fchmod(fileno(pvfile), 0600); // Setting permissions
 
     randstate_init(SEED);
 
