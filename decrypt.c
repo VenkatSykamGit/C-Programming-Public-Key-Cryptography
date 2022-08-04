@@ -32,7 +32,7 @@ void help_message(void) {
 // Main function that holds the implementation of decrypting files
 int main(int argc, char **argv) {
     int opt = 0;
-    FILE *infile = stdin; // specified in asgn6.pdf
+    FILE *infile = stdin;
     FILE *outfile = stdout;
     FILE *pvfile;
     char *pvfile_path = "rsa.priv";
